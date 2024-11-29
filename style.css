@@ -71,7 +71,7 @@ p {
     }
 
     .link-box {
-        color: white;
+        color: whitxe;
     }
 
     .link-box:hover{
@@ -88,10 +88,34 @@ p {
 
 @media (prefers-color-scheme: light){
     body {
-        color: #F4F6FF#10375C;
+        color: #0b2640;
         background-color: #F4F6FF;
     }
-    h1 {
+    h1, h2, a, a:visited {
+        color: #0b2640;
+    }
+    a:hover {
         color: #EB8317;
+    }
+    .container {
+        background-color: #DBDDE5;
+    }
+
+    .link-box, .link-box img {
+        background-color: #DBDDE5;
+        border-color: #10375C;
+    }
+
+    .link-box {
+        color: #0b2640;
+    }
+
+    .link-box:hover{
+        color: #0b2640;
+    }
+
+    .link-box:hover, .link-box:hover img{
+        background-color: #EB8317;
+        border-color: #0b2640;
     }
 }
