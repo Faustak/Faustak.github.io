@@ -1,5 +1,17 @@
 /* color palette: https://colorhunt.co/palette/f4f6fff3c623eb831710375c */
 
+h1 {
+    font-size: 72px;
+    text-decoration: underline;
+}
+
+h2 {
+    font-size: 54px;
+}
+
+p {
+    font-size: 24px;
+}
 
 .page-parts {
     display:flex;
@@ -7,28 +19,35 @@
     flex-wrap: wrap;
 }
 
-.content {
+.content{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    align-items: stretch;
 }
 
-
 .container {
-    border-radius: 2%;
     padding: 20px;
 }
 
-.content .container, .content .container img {
+.content a {
+    display: flex;
+    justify-content: flex-start;
+    text-decoration: none;
+}
+
+.link-box, .link-box img {
     border: solid;
     border-width: 2px;
 }
 
-.content .container {
+.link-box {
+    border-radius: 2%;
+    padding: 20px;
+    transition: 0.3s;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    font-size: 200%;
+    justify-content: flex-start;
 }
 
 @media (prefers-color-scheme: dark){
@@ -36,13 +55,7 @@
         color: #F4F6FF;
         background-color: #10375C;
     }
-    h1 {
-        color: #EB8317;
-    }
-    a {
-        color: #EB8317;
-    }
-    a:visited {
+    h1, h2, a, a:visited {
         color: #EB8317;
     }
     a:hover {
@@ -52,18 +65,22 @@
         background-color: #0b2640;
     }
 
-    .content .container, .content .container img {
+    .link-box, .link-box img {
         background-color: #0b2640;
         border-color: #EB8317;
     }
 
-    .content .container:hover a{
+    .link-box {
+        color: white;
+    }
+
+    .link-box:hover{
         color: #0b2640;
     }
 
-    .container:hover, .container:hover img{
+    .link-box:hover, .link-box:hover img{
         color: #0b2640;
-        background-color: #EB8317;
+        background-color: #F3C623;
         border-color: #0b2640;
     }
     
