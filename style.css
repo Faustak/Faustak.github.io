@@ -1,22 +1,72 @@
 /* color palette: https://colorhunt.co/palette/f4f6fff3c623eb831710375c */
 
+
+.page-parts {
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+
+.container {
+    border-radius: 2%;
+    padding: 20px;
+}
+
+.content .container, .content .container img {
+    border: solid;
+    border-width: 2px;
+}
+
+.content .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 200%;
+}
+
 @media (prefers-color-scheme: dark){
     body {
         color: #F4F6FF;
         background-color: #10375C;
     }
     h1 {
-        color: #F3C623;
+        color: #EB8317;
     }
     a {
-        color: #F3C623;
+        color: #EB8317;
     }
     a:visited {
         color: #EB8317;
     }
     a:hover {
-        color: red;
+        color: #F3C623;
     }
+    .container {
+        background-color: #0b2640;
+    }
+
+    .content .container, .content .container img {
+        background-color: #0b2640;
+        border-color: #EB8317;
+    }
+
+    .content .container:hover a{
+        color: #0b2640;
+    }
+
+    .container:hover, .container:hover img{
+        color: #0b2640;
+        background-color: #EB8317;
+        border-color: #0b2640;
+    }
+    
 }
 
 @media (prefers-color-scheme: light){
