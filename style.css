@@ -1,53 +1,108 @@
 /* color palette: https://colorhunt.co/palette/f4f6fff3c623eb831710375c */
 
-h1 {
-    font-size: 72px;
-    text-decoration: underline;
+@media (min-width: 0px){
+    h1 {
+        font-size: 72px;
+        text-decoration: underline;
+    }
+    
+    h2 {
+        font-size: 54px;
+    }
+    
+    p {
+        font-size: 24px;
+    }
+    
+    .page-parts {
+        display:flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    
+    .content{
+        display: flex;
+        height: 150vh;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: stretch;
+    }
+    
+    .container {
+        padding: 20px;
+    }
+    
+    .content a {
+        display: flex;
+        justify-content: flex-start;
+        text-decoration: none;
+    }
+    
+    .link-box, .link-box img {
+        border: solid;
+        border-width: 2px;
+    }
+    
+    .link-box {
+        width: 100vw;
+        border-radius: 2%;
+        padding: 20px;
+        transition: 0.3s;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
 }
 
-h2 {
-    font-size: 54px;
-}
-
-p {
-    font-size: 24px;
-}
-
-.page-parts {
-    display:flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-}
-
-.content{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: stretch;
-}
-
-.container {
-    padding: 20px;
-}
-
-.content a {
-    display: flex;
-    justify-content: flex-start;
-    text-decoration: none;
-}
-
-.link-box, .link-box img {
-    border: solid;
-    border-width: 2px;
-}
-
-.link-box {
-    border-radius: 2%;
-    padding: 20px;
-    transition: 0.3s;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+@media (min-width: 1300px){
+    h1 {
+        font-size: 72px;
+        text-decoration: underline;
+    }
+    
+    h2 {
+        font-size: 54px;
+    }
+    
+    p {
+        font-size: 24px;
+    }
+    
+    .page-parts {
+        display:flex;
+        flex-direction: column;
+    }
+    
+    .content{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: stretch;
+    }
+    
+    .container {
+        padding: 20px;
+    }
+    
+    .content a {
+        display: flex;
+        justify-content: flex-start;
+        text-decoration: none;
+    }
+    
+    .link-box, .link-box img {
+        border: solid;
+        border-width: 2px;
+    }
+    
+    .link-box {
+        border-radius: 2%;
+        padding: 20px;
+        transition: 0.3s;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
 }
 
 @media (prefers-color-scheme: dark){
@@ -71,7 +126,7 @@ p {
     }
 
     .link-box {
-        color: whitxe;
+        color: white;
     }
 
     .link-box:hover{
