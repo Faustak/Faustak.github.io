@@ -1,6 +1,6 @@
 /* color palette: https://colorhunt.co/palette/f4f6fff3c623eb831710375c */
 
-@media (min-width: 0px){
+@media (min-width: 1300px) {
     h1 {
         font-size: 72px;
         text-decoration: underline;
@@ -15,15 +15,13 @@
     }
     
     .page-parts {
-        display:flex;
+        display: flex;
         flex-direction: column;
-        justify-content: space-around;
     }
     
-    .content{
+    .content {
         display: flex;
-        height: 150vh;
-        flex-direction: column;
+        flex-direction: row; /* Containers next to each other */
         justify-content: space-around;
         align-items: stretch;
     }
@@ -44,7 +42,6 @@
     }
     
     .link-box {
-        width: 100vw;
         border-radius: 2%;
         padding: 20px;
         transition: 0.3s;
@@ -54,7 +51,7 @@
     }
 }
 
-@media (min-width: 1300px){
+@media (max-width: 1300px) {
     h1 {
         font-size: 72px;
         text-decoration: underline;
@@ -68,16 +65,12 @@
         font-size: 24px;
     }
     
-    .page-parts {
-        display:flex;
-        flex-direction: column;
-    }
-    
-    .content{
+    .content {
+        height: 120vh;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
+        align-items: center;
         justify-content: space-around;
-        align-items: stretch;
     }
     
     .container {
@@ -104,6 +97,7 @@
         justify-content: flex-start;
     }
 }
+
 
 @media (prefers-color-scheme: dark){
     body {
